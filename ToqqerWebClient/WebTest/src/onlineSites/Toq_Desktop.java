@@ -152,12 +152,9 @@ public class Toq_Desktop
 				return false;
 			}	
 			catch (NoAlertPresentException Ex) 
-		    { 
-				
+		    { 				
 		        return false;
-		    }
-		
-		
+		    }	
 	}
 	@SuppressWarnings("unlikely-arg-type")
 	@Test(priority=7)
