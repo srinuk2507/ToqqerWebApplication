@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Toqqer]">
+  <test thread-count="5" name="Toq Test(failed)">
+    <parameter name="password" value="toqqer@123"/>
+    <parameter name="browser" value="c"/>
+    <parameter name="username" value="22"/>
+    <classes>
+      <class name="onlineSites.Toq_Desktop">
+        <methods>
+          <include name="viduploadcheck"/>
+          <include name="vidDetails"/>
+        </methods>
+      </class> <!-- onlineSites.Toq_Desktop -->
+    </classes>
+  </test> <!-- Toq Test(failed) -->
+</suite> <!-- Failed suite [Toqqer] -->

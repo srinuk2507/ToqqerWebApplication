@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Toqqer">
+
+  <test name="Toq Test">
+  <parameter name="browser" value="c"/>
+  <parameter name="username" value="22"/>
+  <parameter name="password" value="toqqer@123"/>
+    <classes>
+      <class name="onlineSites.Toq_Desktop"/>
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Toqqer" duration-ms="24238" started-at="2019-04-03T09:48:41Z" finished-at="2019-04-03T09:49:05Z">
+    <groups>
+    </groups>
+    <test name="Toq Test" duration-ms="24238" started-at="2019-04-03T09:48:41Z" finished-at="2019-04-03T09:49:05Z">
+      <class name="onlineSites.Toq_Desktop">
+        <test-method status="PASS" signature="LaunchBrowser(java.lang.String)[pri:1, instance:onlineSites.Toq_Desktop@4678c730]" name="LaunchBrowser" duration-ms="6552" started-at="2019-04-03T09:48:41Z" finished-at="2019-04-03T09:48:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:2, instance:onlineSites.Toq_Desktop@4678c730]" name="Login" duration-ms="2426" started-at="2019-04-03T09:48:47Z" finished-at="2019-04-03T09:48:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[22]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[toqqer@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="uploadvid()[pri:3, instance:onlineSites.Toq_Desktop@4678c730]" name="uploadvid" duration-ms="4284" started-at="2019-04-03T09:48:50Z" finished-at="2019-04-03T09:48:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadvid -->
+        <test-method status="PASS" signature="JavaRobot()[pri:4, instance:onlineSites.Toq_Desktop@4678c730]" name="JavaRobot" duration-ms="3620" started-at="2019-04-03T09:48:54Z" finished-at="2019-04-03T09:48:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaRobot -->
+        <test-method status="PASS" signature="SelectCategory()[pri:5, instance:onlineSites.Toq_Desktop@4678c730]" name="SelectCategory" duration-ms="469" started-at="2019-04-03T09:48:58Z" finished-at="2019-04-03T09:48:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectCategory -->
+        <test-method status="PASS" signature="viduploadcheck()[pri:7, instance:onlineSites.Toq_Desktop@4678c730]" name="viduploadcheck" duration-ms="6807" started-at="2019-04-03T09:48:58Z" finished-at="2019-04-03T09:49:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viduploadcheck -->
+      </class> <!-- onlineSites.Toq_Desktop -->
+    </test> <!-- Toq Test -->
+  </suite> <!-- Toqqer -->
+</testng-results>
