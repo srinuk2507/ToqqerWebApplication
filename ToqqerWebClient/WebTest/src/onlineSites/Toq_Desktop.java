@@ -25,6 +25,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -88,7 +89,7 @@ public class Toq_Desktop
 	{
 		Thread.sleep(3000);
 		
-		StringSelection stringSelection = new StringSelection("F:\\Download\\Video\\Linkedin\\In Ice Cream Factory.mp4");
+		StringSelection stringSelection = new StringSelection("F:\\Download\\Video\\Linkedin\\Best First Over Bowled In The History Of Test Cricket, Three deadly swinging balls! .mp4");
 		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 		System.out.println("Message copied" + clipboard);
 		clipboard.setContents(stringSelection, null);
@@ -117,46 +118,42 @@ public class Toq_Desktop
 	public void SelectCategory() throws Exception
 	{
 		Random random = new Random();
-		int index = random.nextInt(10); 
+		int index = random.nextInt(15);
 		System.out.println("Index is "+index);
 		WebElement listBox = driver.findElement(By.xpath("//select[@id='vidcat']"));
 		Select list = new Select(listBox);
 		list.selectByIndex(index);
 	}
-										/* End of Select Category */
+										
 	@Test(priority=6)
-	public boolean vidDetails() throws Exception 
+	public void vidDetails() throws Exception 
 	{
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//input[@id='video_title']")).sendKeys("Best First Over Bowled");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='video_title']")).sendKeys("In Ice Cream Factory");
+		driver.findElement(By.xpath("//input[@id='video_tag']")).sendKeys("123");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='video_tag']")).sendKeys("");
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='video_desc']")).sendKeys("123");
+		driver.findElement(By.xpath("//input[@id='video_desc']")).sendKeys("Remember Echo");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@value='Submit']")).click();
 		Thread.sleep(2000);
+	
 		try
+			{	
+				driver.switchTo().alert().accept();
+				System.out.println("Submit button has displayed");
+				Thread.sleep(3000);
+				driver.close();
+				
+			}
+		catch(Exception e)
 			{
-				WebElement closebutton=driver.findElement(By.id("uploadDialogHide"));
-				if(closebutton.isDisplayed())
-					{
-						driver.switchTo().alert(); 
-						return true;
-					}
-				else
-					{
-						driver.findElement(By.id("uploadDialogHide")).click();
-					}
-				Thread.sleep(2000);
-				return false;
-			}	
-			catch (NoAlertPresentException Ex) 
-		    { 				
-		        return false;
-		    }	
+				System.out.println("Submit button not displayed");
+			}
+		WebElement dclick2 = driver.findElement(By.id("uploadDialogHide"));
+		dclick2.click();
 	}
-	@SuppressWarnings("unlikely-arg-type")
+	
 	@Test(priority=7)
 	public void viduploadcheck() throws Exception
 	{
@@ -164,7 +161,8 @@ public class Toq_Desktop
 		driver.findElement(By.xpath("//i[@class='fa fa-video-camera']//span[contains(text(),'Videos')]")).click();
 		driver.findElement(By.xpath("//span[contains(text(),'My Videos')]")).click();
 		WebElement divtitle=driver.findElement(By.className("title-div"));
-		Thread.sleep(2000);
+		divtitle.click();
+		Thread.sleep(4000);
 		driver.close();
 	}
 }
