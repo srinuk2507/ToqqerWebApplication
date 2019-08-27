@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <parameter name="password" value="param-val-not-found"/>
-  <parameter name="browser" value="param-val-not-found"/>
-  <parameter name="username" value="param-val-not-found"/>
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Toqqer]">
+  <test thread-count="5" name="Toq Test(failed)">
+    <parameter name="password" value="toqqer@123"/>
+    <parameter name="browser" value="c"/>
+    <parameter name="username" value="22"/>
     <classes>
       <class name="onlineSites.Toq_Desktop">
         <methods>
-          <include name="LaunchBrowser" invocation-numbers="0"/>
-          <include name="Login" invocation-numbers="0"/>
-          <include name="SelectCategory"/>
+          <include name="launchBrowser" invocation-numbers="0"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="javaRobot"/>
           <include name="uploadvid"/>
+          <include name="sikuli"/>
           <include name="viduploadcheck"/>
+          <include name="vidDetails"/>
+          <include name="selectCategory"/>
         </methods>
       </class> <!-- onlineSites.Toq_Desktop -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Toq Test(failed) -->
+</suite> <!-- Failed suite [Toqqer] -->

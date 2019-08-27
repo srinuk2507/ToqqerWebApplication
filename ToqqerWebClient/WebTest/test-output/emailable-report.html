@@ -9,15 +9,65 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Toqqer</th></tr>
-<tr><td><a href="#t0">Toq Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">24,238</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Toq Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">8</td><td class="num">21,092</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Toqqer</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Toq Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">onlineSites.Toq_Desktop</td><td><a href="#m0">JavaRobot</a></td><td rowspan="1">1554284934427</td><td rowspan="1">3620</td></tr><tr class="passedeven"><td><a href="#m1">LaunchBrowser</a></td><td rowspan="1">1554284921149</td><td rowspan="1">6552</td></tr><tr class="passedeven"><td><a href="#m2">Login</a></td><td rowspan="1">1554284927709</td><td rowspan="1">2426</td></tr><tr class="passedeven"><td><a href="#m3">SelectCategory</a></td><td rowspan="1">1554284938065</td><td rowspan="1">469</td></tr><tr class="passedeven"><td><a href="#m4">uploadvid</a></td><td rowspan="1">1554284930139</td><td rowspan="1">4284</td></tr><tr class="passedeven"><td><a href="#m5">viduploadcheck</a></td><td rowspan="1">1554284938534</td><td rowspan="1">6807</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Toqqer</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Toq Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="8">onlineSites.Toq_Desktop</td><td><a href="#m0">javaRobot</a></td><td rowspan="1">1561726777340</td><td rowspan="1">3003</td></tr><tr class="failedeven"><td><a href="#m1">launchBrowser</a></td><td rowspan="1">1561726769438</td><td rowspan="1">7849</td></tr><tr class="failedeven"><td><a href="#m2">login</a></td><td rowspan="1">1561726777323</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m3">selectCategory</a></td><td rowspan="1">1561726780349</td><td rowspan="1">33</td></tr><tr class="failedeven"><td><a href="#m4">sikuli</a></td><td rowspan="1">1561726787425</td><td rowspan="1">3037</td></tr><tr class="failedeven"><td><a href="#m5">uploadvid</a></td><td rowspan="1">1561726777335</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m6">vidDetails</a></td><td rowspan="1">1561726780387</td><td rowspan="1">5005</td></tr><tr class="failedeven"><td><a href="#m7">viduploadcheck</a></td><td rowspan="1">1561726785415</td><td rowspan="1">2004</td></tr></tbody>
 </table>
-<h2>Toq Test</h2><h3 id="m0">onlineSites.Toq_Desktop#JavaRobot</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">onlineSites.Toq_Desktop#LaunchBrowser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>c</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">onlineSites.Toq_Desktop#Login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>22</td><td>toqqer@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">onlineSites.Toq_Desktop#SelectCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">onlineSites.Toq_Desktop#uploadvid</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">onlineSites.Toq_Desktop#viduploadcheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Toq Test</h2><h3 id="m0">onlineSites.Toq_Desktop#javaRobot</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at onlineSites.Toq_Desktop.indexDataGet(Toq_Desktop.java:132)
+	at onlineSites.Toq_Desktop.javaRobot(Toq_Desktop.java:101)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">onlineSites.Toq_Desktop#launchBrowser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>c</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: Chrome version must be between 70 and 73
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.47 seconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;TOQQER-SRINIVAS&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at onlineSites.Toq_Desktop.launchBrowser(Toq_Desktop.java:56)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">onlineSites.Toq_Desktop#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>22</td><td>toqqer@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException
+	at onlineSites.Toq_Desktop.login(Toq_Desktop.java:78)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">onlineSites.Toq_Desktop#selectCategory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at onlineSites.Toq_Desktop.selectCategory(Toq_Desktop.java:154)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">onlineSites.Toq_Desktop#sikuli</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Unknown Source)
+	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:65)
+	at onlineSites.Toq_Desktop.sikuli(Toq_Desktop.java:202)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">onlineSites.Toq_Desktop#uploadvid</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at onlineSites.Toq_Desktop.uploadvid(Toq_Desktop.java:89)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">onlineSites.Toq_Desktop#vidDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at onlineSites.Toq_Desktop.vidDetails(Toq_Desktop.java:164)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">onlineSites.Toq_Desktop#viduploadcheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at onlineSites.Toq_Desktop.viduploadcheck(Toq_Desktop.java:193)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

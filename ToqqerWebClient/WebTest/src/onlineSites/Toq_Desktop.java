@@ -165,7 +165,7 @@ public class Toq_Desktop
 		System.out.println("video Title Print: "+vidTitle);
 		driver.findElement(By.xpath("//input[@id='video_title']")).sendKeys(vidTitle);
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='video_tag']")).sendKeys(vidTitle);
+		driver.findElement(By.xpath("//input[@id='video_tag']")).sendKeys("Description"+vidTitle);
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='video_desc']")).sendKeys(vidTitle);
 		Thread.sleep(2000);
